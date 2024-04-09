@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="timer-container">
+                <div class="timer-header">
+                    <span class="timer-status">Ready To Work</span>
+                </div>
+                <div class="timer">
+                    <span class="time">00:00:00</span>
+                </div>
+            </div>
+            <div class="separator hidden">
+                <span class="timeline-header">Timeline</span>
+            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline-container">
+                    <div class="timeline"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clock-actions">
+            <button class="clock-in-btn">Clock In</button>
+            <button class="callback-in-btn">Callback In</button>
+        </div>
+        <div class="bottom-section">
+            <div class="separator actions-separator hidden">
+                <span class="actions-header">Actions</span>
+            </div>
+            <div class="action-buttons hidden">
+                <div class="action-buttons-row">
+                    <button class="add-notes-btn hidden">Add Notes</button>
+                    <button class="start-travel-btn">Start Travel</button>
+                    <button class="end-travel-btn hidden">End Travel</button>
+                </div>
+                <div class="action-buttons-row">
+                    <button class="end-lunch-btn hidden">End Lunch</button>
+                    <button class="take-lunch-btn">Take Lunch</button>
+                    <button class="clock-out-btn">Clock Out</button>
+                    <button class="callback-out-btn hidden">Callback Out</button>
+                </div>
+            </div>
+        </div>
+        <div class="validation-message hidden">
+            <p class="validation-message-text"></p>
+            <div class="validation-buttons">
+                <button class="confirm-btn">Yes</button>
+                <button class="cancel-btn">No</button>
+            </div>
+        </div>
+        <div class="add-notes-modal hidden">
+            <div class="modal-content">
+                <h2>Add Notes</h2>
+                <textarea class="notes-textarea" placeholder="Type your notes here..."></textarea>
+                <div class="modal-buttons">
+                    <button class="add-note-btn">Add</button>
+                    <button class="cancel-notes-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
